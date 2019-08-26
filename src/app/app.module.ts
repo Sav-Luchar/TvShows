@@ -22,7 +22,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     AppRoutingModule,
-
     HttpClientModule,
     BrowserAnimationsModule,
     MatFormFieldModule,
@@ -33,9 +32,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MatCardModule,
     FormsModule,
     ReactiveFormsModule
-
-    HttpClientModule
-
   ],
   providers: [ShowsService],
   bootstrap: [AppComponent]

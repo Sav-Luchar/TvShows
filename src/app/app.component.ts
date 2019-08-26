@@ -17,9 +17,7 @@ export class AppComponent {
 
   doSearch(searchValue) {
      const userInput = searchValue;
-    // this.showsService.getShowData(userInput.length > 1 ? userInput: undefined).subscribe(data => this.currentShow = data);
-    this.showsService.getShowData(userInput[0]).subscribe(data => this.currentShow = data);
-   //console.log("dosearch :  " + this.showService.getShowData(userInput));
+    this.showsService.getShowData(userInput).subscribe(data => this.currentShow = data);
   }
 }
 

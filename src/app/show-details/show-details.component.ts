@@ -9,16 +9,10 @@ import { ShowsService } from '../shows/shows.service';
 })
 export class ShowDetailsComponent implements OnInit {
 
-  @Input() current: ICurrentShow;
+  @Input() currentShow: ICurrentShow;
   constructor() {}
 
-  currentShow: ICurrentShow;
-  constructor(private showsService: ShowsService) {
-
-  }
-
-
   ngOnInit() {
-    this.showsService.getShowData("girls").subscribe(data => (this.currentShow = data));
+    
   }
 }

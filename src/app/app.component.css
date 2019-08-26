@@ -1,0 +1,10 @@
+.mat-toolbar.mat-primary {
+    background: #943fb5;
+    color: #fff;
+    position: relative;
+}
+
+.title-center {
+  flex: 1 1 auto;
+  text-align: center;
+}

@@ -1,13 +1,13 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
-  <mat-toolbar color="primary">
-    <span>Welcome to {{ title }}!</span>
+  <mat-toolbar color="primary" >
+    <span class="title-center">Welcome to {{ title }}!</span>
   </mat-toolbar>
   <div>
     <app-show-search (searchEvent)= "doSearch($event)"></app-show-search>
   </div>
 </div>
 <mat-card color="primary">
-  <app-show-details [current]="currentShow"></app-show-details>
+  <app-show-details [currentShow]="currentShow"></app-show-details>
 </mat-card>
 <router-outlet></router-outlet>
